@@ -1,0 +1,53 @@
+﻿tr {
+    border-top: 1px solid #868686;
+}
+
+td {
+    border-left: 1px solid #868686;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 72px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#content {
+    width: 100%;
+    transition: margin-left .5s;
+    padding: 20px 0;
+}
+
+.akron-dropdown-menu {
+    display: none;
+}
+
+.show {display: block;}

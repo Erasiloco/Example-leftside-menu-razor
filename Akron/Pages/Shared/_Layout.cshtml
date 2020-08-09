@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>@ViewData["Title"] - Akron</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div id="mySidenav" class="sidenav">
+            <hr style="border: 1px solid #ebebeb;">
+            <ul>
+                <li>
+                    <a href="javascript:dropSubMenu()" class="dropdown-toggle">Администрирование</a>
+                    <ul class="akron-dropdown-menu" id="adminMenu">
+                        <li>
+                            <a href="#">Пользователи</a>
+                        </li>
+                        <li>
+                            <a href="#">Профиль</a>
+                        </li>
+                        <li>
+                            <a href="#">Журнал пользователя</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div width="100%">
+                <a href="javascript:menuClick()"><img src="~/images/menu-rounded-solid.svg" height="24" style="margin: 24px"></a>
+            </div>
+            <main role="main" class="pb-3" style="background-color: #ebebeb; padding: 16px;">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

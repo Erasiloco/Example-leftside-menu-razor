@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Akron", "Akron\Akron.csproj", "{9E55ADC0-2B30-494F-960C-C7019E7D7223}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E55ADC0-2B30-494F-960C-C7019E7D7223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E55ADC0-2B30-494F-960C-C7019E7D7223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E55ADC0-2B30-494F-960C-C7019E7D7223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E55ADC0-2B30-494F-960C-C7019E7D7223}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD8F4D8B-1E24-49EC-A1D7-04BFC1D871B6}
+	EndGlobalSection
+EndGlobal

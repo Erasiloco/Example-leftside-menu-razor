@@ -1,0 +1,62 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    List<Akron.Models.User> users = new List<Akron.Models.User>()
+    {
+        new Models.User("Vlad"),
+        new Models.User("Ruslan"),
+        new Models.User("Sasha")
+    };
+}
+<div style="        border-radius: 5px;
+        background-color: white;
+        padding: 32px;
+        width: 100%;
+">
+    <p>Выбрать все <input id="checkAll" type="checkbox" name="ChooseAll"></p>
+    <table width="800" class="users-table" cellpadding="5">
+        <tr>
+            <td>
+            </td>
+            <td>
+                СКАЧАТЬ
+            </td>
+            <td>
+                УДАЛИТЬ
+            </td>
+            <td>
+                ИЗМЕНИТЬ
+            </td>
+            <td>
+                СОЗДАТЬ
+            </td>
+            <td>
+                ЧТЕНИЕ
+            </td>
+        </tr>
+        @foreach (var item in users)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)<br />
+                </td>
+                <td>
+                    @Html.CheckBoxFor(modelItem => item.CanDownload, new { @class = "user-checkbox" })<br />
+                </td>
+                <td>
+                    @Html.CheckBoxFor(modelItem => item.CanDelete, new { @class = "user-checkbox" })<br />
+                </td>
+                <td>
+                    @Html.CheckBoxFor(modelItem => item.CanModify, new { @class = "user-checkbox" })<br />
+                </td>
+                <td>
+                    @Html.CheckBoxFor(modelItem => item.CanCreate, new { @class = "user-checkbox" })<br />
+                </td>
+                <td>
+                    @Html.CheckBoxFor(modelItem => item.CanRead, new { @class = "user-checkbox" })<br />
+                </td>
+            </tr>
+        }
+    </table>
+</div>
